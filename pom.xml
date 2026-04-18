@@ -10,7 +10,7 @@
 		<relativePath/>
 	</parent>
 
-	<groupId>io.github.ketansingh</groupId>
+	<groupId>io.github.ketansinghrajput</groupId>
 	<artifactId>pii-masker-spring-boot-starter</artifactId>
 	<version>1.0.0</version>
 	<name>PII Masker Spring Boot Starter</name>
@@ -28,7 +28,7 @@
 		<developer>
 			<name>Ketansingh Rajput</name>
 			<email>theketanrajput@gmail.com</email>
-			<organization>io.github.ketansingh</organization>
+			<organization>io.github.ketansinghrajput</organization>
 			<organizationUrl>https://github.com/Ketansinghrajput</organizationUrl>
 		</developer>
 	</developers>
