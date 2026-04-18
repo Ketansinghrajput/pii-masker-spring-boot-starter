@@ -18,7 +18,7 @@ jobs:
           distribution: 'temurin'
           server-id: central
           server-username: OSSRH_USERNAME
-          server-password: OSSRH_TOKEN
+          server-password: NHSUOP
 
       - name: Prepare GPG Key
         run: |
@@ -29,5 +29,5 @@ jobs:
         run: mvn clean deploy -B -DskipTests
         env:
           OSSRH_USERNAME: ${{ secrets.OSSRH_USERNAME }}
-          OSSRH_TOKEN: ${{ secrets.OSSRH_TOKEN }}
+          OSSRH_TOKEN: ${{ secrets.NHSUOP }}
           GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
