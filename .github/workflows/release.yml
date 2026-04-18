@@ -2,7 +2,7 @@ name: Maven Central Release
 
 on:
   push:
-    branches: [ main ] # Jab main branch par push hoga tabhi deploy karega
+    branches: [ main ]
 
 jobs:
   publish:
