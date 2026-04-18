@@ -22,11 +22,12 @@ jobs:
 
       - name: Prepare GPG Key
         run: |
-          # Private key ko runner ke GPG keyring mein manual import karna
-          echo "${{ secrets.GPG_PRIVATE_KEY }}" | gpg --batch --import --no-tty
+          cat <<EOF | gpg --batch --import
+          ${{ secrets.GPG_PRIVATE_KEY }}
+          EOF
 
       - name: Publish to Maven Central
-        run: mvn clean deploy -B -DskipTests
+        run: mvn clean deploy -B -DskipTests -Dgpg.passphrase="${{ secrets.GPG_PASSPHRASE }}"
         env:
           OSSRH_USERNAME: ${{ secrets.OSSRH_USERNAME }}
           OSSRH_TOKEN: ${{ secrets.NHSUOP }}
