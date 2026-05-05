@@ -76,5 +76,3 @@ Found a bug or want to add support for masking SSNs/PAN numbers? Pull requests a
 
 ## 📄 License
 Distributed under the Apache License 2.0.
-```
-```
